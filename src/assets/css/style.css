@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+    /* App */
+
+/* Encabezado*/
+header {
+    background: #fff;
+    width: 100%;
+    height: 7vh;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 60px;
+    }
+}
+
+.dropdown {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+#espacio-1 {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+#espacio-1 img {
+    width: 50px;
+    height: 50px;
+}
+#espacio-1 span {
+    font-weight: 500;
+    margin: 0 0 0 5px;
+    font-size: 5vh;
+}
+.dropdown-toggle {
+    background: #E5E5E5;
+    border: none;
+}
+.dropdown-toggle i {
+    font-size: 25px;
+}
+.dropdown-toggle::after {
+    content: none !important;
+}
+#nav-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-1 .link-nav-1 {
+    font-size: 18px;
+    color: #000;
+    height: 100%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.linki {
+    font-size: 18px;
+    color: #000;
+    height: 100%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nav-2 {
+    width: 62%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#nav-2 .btn-color {
+    background: #4d9dff !important;
+}
+#nav-2 .btn-color:hover {
+    background:  #0069D9 !important;
+}
+
+/* Vista */
+.view {
+    background: #F5F5F5;
+}
+
+/* Footer*/
+footer {
+    height: 30px;
+}
+
+/* Modal contacto */
+.modal-body,
+.modal-footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* FIN App */
+
+    /* InicioPage */
+
+/* Tarjeta*/
+#tarjeta {
+    width: 100%;
+    background: #EDEDED;
+    box-shadow: 0px 0px 0.45rem gray;
+}
+#tarjeta div {
+    width: 50%;
+}
+#tarjeta p,
+#tarjeta .font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tarjeta .slide {
+    height: 330px;
+}
+#tarjeta .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+#tarjeta .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+.car-1 {
+    background: url(../img/portada-1.jpeg);
+    background-size: 100% 100%;
+}
+.car-2 {
+    background: url(../img/portada-2.jpg);
+    background-size: 100% 100%;
+}
+.car-3 {
+    background: url(../img/portada-3.jpg);
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #tarjeta div {
+        width: 100%;
+    }
+    #tarjeta .slide {
+        height: 250px;
+    }
+}
+
+/* media query */
+
+/* Top 3*/
+#text-top {
+    font-size: 30px;
+    font-weight: 900;
+}
+.inicio-canciones {
+    width: 100%;
+    display: flex;
+}
+.inicio-canciones .texto-normal {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inicio-canciones div:first-child {
+    width: 30%;
+}
+.inicio-canciones .texto {
+    font-size: 20px;
+    font-weight: 700;
+}
+.inicio-canciones div:last-child {
+    width: 70%;
+}
+@media screen and (max-width: 768px) {
+    .inicio-canciones div:last-child {
+        width: 100%;
+    }
+    #contenedor-login {
+        width: 80% !important;
+    }
+}
+.audio {
+    width: 100%;
+}
+.audio::-webkit-media-controls-start-playback-button {
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+}
+.audio::-webkit-media-controls-panel {
+  background-color: #E5E5E5;
+  border-radius: 5px;
+}
+
+    /* FIN InicioPage */
+
+    /* Canciones page */
+
+.cartas {
+    width: 30%;
+}
+.img-canciones {
+    width: 100px;
+}
+@media screen and (max-width: 992px) {
+    .cartas {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .cartas {
+        width: 100%;
+    }
+}
+
+    /* FIN Canciones page
+
+    /* Validaciones en input */
+
+#contenedor-login {
+    width: 40%;
+}
+.is-invalid {
+    border-color: red !important;
+}
+.invalid-feedback {
+    color: red !important;
+    font-size: 14px;
+}
+.is-valid {
+    border-color: green !important;
+}
+.valid-feedback {
+    color: green !important;
+    font-size: 14px;
+}
+.custom-icon {
+    background-color: transparent;
+    border: none;  
+}
+form, label, input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* FIN Validaciones en input */
